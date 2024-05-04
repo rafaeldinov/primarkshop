@@ -1,0 +1,32 @@
+@import '../../../scss/mixins.scss';
+
+.change_password {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  min-height: 30px;
+  text-align: center;
+
+  &__response_text {
+    font-family: var(--font-roboto-mono);
+    font-size: calcFluidFontSize(12, 19, 150, 1400);
+    font-weight: 500;
+  }
+
+  &__button {
+    @include button;
+    margin-top: 20px;
+  }
+
+  &__input {
+    @include input;
+  }
+}
+
+.back_to_main {
+  @include button;
+  margin: 30px auto;
+}

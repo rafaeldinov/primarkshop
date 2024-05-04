@@ -1,0 +1,30 @@
+@import '../../scss/functions.scss';
+
+.container {
+  position: relative;
+}
+
+.slider {
+  &__text {
+    width: 100%;
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: #ff0000;
+    font-size: calcFluidFontSize(5, 14, 140, 1900);
+  }
+
+  &__error {
+    color: #ff0000;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+}

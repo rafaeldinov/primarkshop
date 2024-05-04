@@ -1,0 +1,29 @@
+.main_page {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__pagination {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 10px;
+  }
+
+  &__cards {
+    margin: 0px auto 30px auto;
+  }
+
+  &__up_button {
+    position: fixed;
+    bottom: 6%;
+    left: 4%;
+    cursor: pointer;
+  }
+}

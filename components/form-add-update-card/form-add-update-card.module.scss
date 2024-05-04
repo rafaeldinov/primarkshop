@@ -1,0 +1,108 @@
+@import '../../scss/mixins.scss';
+
+.main {
+  height: 80%;
+  margin: 20px auto;
+}
+
+.form {
+  max-width: 600px;
+  resize: horizontal;
+  padding: 5%;
+  font-family: var(--font-roboto-mono);
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    &_choose_image_submit {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &_add_show_images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__card_image {
+    width: 50px;
+    margin-top: 10px;
+  }
+}
+
+.fieldset {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.input {
+  @include input;
+  border: none;
+
+  &_wrapper {
+    position: relative;
+    height: 30px;
+    margin-top: 10px;
+    border-bottom: 3px solid #ddd;
+
+    &:after {
+      position: absolute;
+      bottom: -3px;
+      left: 0px;
+      display: block;
+      width: 100%;
+      content: '';
+      border-bottom: 3px solid #ff0101;
+      transform: scaleX(0);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
+
+.required:after {
+  transform: scaleX(1);
+}
+
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: var(--font-roboto-mono);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px;
+    border: 2px solid #27a0a0;
+  }
+
+  &__label {
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-roboto-mono);
+  }
+
+  &__buttons {
+    margin-top: 2px;
+  }
+}
+
+.button {
+  @include button;
+}
+
+.image__name {
+  word-break: break-all;
+  margin-top: 1rem;
+  max-width: 50%;
+}

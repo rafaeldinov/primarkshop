@@ -1,0 +1,14 @@
+@import '../../scss/functions.scss';
+
+.logo_header {
+  display: flex;
+  font-family: var(--font-cookie), cursive;
+  font-size: calcFluidFontSize(28, 36, 150, 1400);
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+
+  &__link:hover {
+    color: #8250b1;
+  }
+}

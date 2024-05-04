@@ -1,0 +1,30 @@
+@import '../../scss/functions.scss';
+
+.main {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #7f25e5;
+  background: linear-gradient(135deg, #7f25e5, #d0f8ec);
+  overflow: hidden;
+
+  &__text {
+    max-width: 600px;
+    text-align: center;
+    font-family: var(--font-montserrat);
+    font-size: calcFluidFontSize(12, 45, 150, 2400);
+    font-weight: 600;
+    line-height: 2;
+    font-style: normal;
+    font-display: auto;
+    padding: 1rem;
+
+    &_link {
+      font-family: var(--font-cookie), cursive;
+      font-size: calcFluidFontSize(16, 55, 150, 1400);
+    }
+  }
+}

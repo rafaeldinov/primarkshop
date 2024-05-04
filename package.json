@@ -1,0 +1,75 @@
+{
+  "name": "primark",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": {
+    "production": [
+      ">0.05%",
+      "not dead",
+      "not op_mini all",
+      "Safari>=11"
+    ],
+    "development": [
+      "Chrome 118",
+      "last 1 chrome version",
+      "last 1 edge version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/joy": "^5.0.0-beta.24",
+    "@mui/material": "^5.15.7",
+    "@mui/material-nextjs": "^5.15.6",
+    "@react-email/render": "^0.0.12",
+    "@react-input/mask": "^1.0.20",
+    "@types/react-input-mask": "^3.0.5",
+    "@uidotdev/usehooks": "^2.4.1",
+    "bcrypt": "^5.1.1",
+    "cookies-next": "^4.1.1",
+    "firebase": "^10.7.1",
+    "firebase-admin": "^12.0.0",
+    "google-auth-library": "^9.4.2",
+    "nanoid": "^5.0.4",
+    "next": "^14.1.3",
+    "next-auth": "^4.24.5",
+    "nodemailer": "^6.9.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-toastify": "^10.0.4",
+    "resend": "^3.2.0",
+    "sharp": "^0.33.3",
+    "short-unique-id": "^5.0.3",
+    "telegraf": "^4.16.3",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@netlify/ipx": "^1.4.6",
+    "@netlify/plugin-nextjs": "^5.2.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
+    "@types/webfontloader": "^1.6.38",
+    "eslint": "^8",
+    "eslint-config-next": "^14.1.0",
+    "sass": "^1.69.7",
+    "typescript": "^5"
+  }
+}

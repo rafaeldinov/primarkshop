@@ -1,0 +1,29 @@
+@import '../../scss/mixins.scss';
+
+.images {
+  max-height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @media (orientation: landscape) {
+    max-height: 70dvh;
+  }
+}
+
+.image_list {
+  max-width: 80vw;
+  max-height: 80dvh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.close_button {
+  @include button;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+}

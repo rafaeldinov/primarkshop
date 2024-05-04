@@ -1,0 +1,43 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/functions.scss';
+
+.profile {
+  width: calcFluidFontSize(240, 300, 150, 1200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  gap: 2rem;
+
+  @media (max-width: 320px) {
+    width: calcFluidFontSize(120, 300, 150, 480);
+  }
+
+  &__text {
+    font-family: var(--font-roboto-mono);
+    text-align: center;
+  }
+
+  &__info {
+    font-family: var(--font-roboto-mono);
+    text-align: center;
+    color: #ff0000;
+  }
+
+  &__input {
+    @include input;
+
+    &:after {
+      position: absolute;
+      bottom: 0px;
+      display: block;
+      width: 100%;
+      content: '';
+      border-bottom: 3px solid #ddd;
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}

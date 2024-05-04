@@ -1,0 +1,92 @@
+@import '../../scss/mixins.scss';
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 1.4rem;
+  }
+
+  &__email {
+    width: fit-content;
+    font-family: var(--font-poppins);
+    max-width: 240px;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 380px) {
+    &__header {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    &__info {
+      min-width: 150px;
+    }
+  }
+}
+
+.signout_button {
+  @include button();
+  max-height: 2.5rem;
+}
+
+.verify_email_open_button {
+  @include button();
+  animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}

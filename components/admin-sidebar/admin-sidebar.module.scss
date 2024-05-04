@@ -1,0 +1,36 @@
+@import '../../scss/functions.scss';
+
+.sidebar {
+  height: 100%;
+  min-width: 20%;
+  box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    height: fit-content;
+  }
+
+  &__icon {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+
+      &_text {
+        font-family: var(--font-roboto-mono);
+        font-weight: 600;
+        font-size: calcFluidFontSize(14, 16, 150, 1400);
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}

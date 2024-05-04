@@ -1,0 +1,78 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/functions.scss';
+
+.signup {
+  max-height: 50dvh;
+  width: calcFluidFontSize(240, 300, 150, 1200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow-y: auto;
+
+  &__header {
+    font-family: var(--font-roboto-mono);
+    font-size: calcFluidFontSize(12, 16, 150, 1400);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    max-width: 100%;
+    font-size: calcFluidFontSize(6, 18, 150, 480);
+  }
+
+  &__input {
+    @include input;
+
+    &:after {
+      position: absolute;
+      bottom: 0px;
+      display: block;
+      width: 100%;
+      content: '';
+      border-bottom: 3px solid #ddd;
+    }
+  }
+
+  &__submit_clear_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto;
+  }
+
+  &__button {
+    @include button;
+  }
+
+  @media (max-width: 320px) {
+    width: calcFluidFontSize(120, 300, 150, 480);
+    gap: 1rem;
+  }
+}
+
+.signin_link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &__text {
+    text-align: center;
+    font-size: calcFluidFontSize(12, 16, 150, 1400);
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+
+    &:hover {
+      background: none;
+      text-decoration: underline;
+    }
+  }
+}
